@@ -1,0 +1,162 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #5FBBE7, #00529B);
+}
+
+.container{
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container .form{
+    padding: 30px 40px;
+}
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    color: #333;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 50px;
+    background: linear-gradient(135deg, #5FBBE7, #00529B);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.form .input-field{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+.form .input-field input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 0 40px;
+    font-size: 14px;
+    background: none;
+    color: #333;
+    border-bottom: 2px solid #f1f1f1;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+.form .input-field input::placeholder{
+    color: #757575;
+}
+.form .input-field input:is(:focus, :valid){
+    border-bottom-color: #3498db;
+}
+.form .input-field i{
+    position: absolute;
+    top: 50%;
+    color: #757575;
+    font-size: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.form .input-field input:is(:focus, :valid) ~ i{
+    color: #3498db;
+}
+.form .input-field i.icon{
+    left: 0;
+}
+.form .input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+}
+.form .checkbox-text{
+    margin-top: 20px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    margin: 0 7px -1px 4px;
+    border: none;
+    outline: none;
+    accent-color: #3498db;
+}
+.form .text{
+    color: #757575;
+    font-size: 13px;
+    font-weight: 500;
+}
+.form .sub-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #757575;
+    margin-top: 20px;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #5FBBE7, #00529B);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.form .button input:hover{
+    background: linear-gradient(-135deg, #5FBBE7, #00529B);
+}
+
+@media (max-width: 768px) {
+    .container{
+      max-width: 400px;
+      padding: 20px;
+    }
+}
+  
+/* Responsif untuk ponsel (max 480px) */
+@media (max-width: 480px) {
+.container{
+    max-width: 350px;
+    padding: 15px;
+}
+.container .form .title{
+    font-size: 24px;
+}
+}

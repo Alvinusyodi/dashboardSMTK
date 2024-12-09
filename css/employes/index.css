@@ -1,0 +1,57 @@
+.btn-add{
+    padding: 1em 1.2em;
+    background: linear-gradient(135deg, #5FBBE7, #00529B);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: .6em;
+    -webkit-border-radius: .6em;
+    -moz-border-radius: .6em;
+    -ms-border-radius: .6em;
+    -o-border-radius: .6em;
+}
+.btn-add:hover{
+    background: linear-gradient(-135deg, #5FBBE7, #00529B);
+}
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+.action .action-btn{
+    width: 100%;
+    padding: 0.5em 0.8em;
+    background-color: #3498db;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    -ms-border-radius: .4em;
+    -o-border-radius: .4em;
+}
+.action .action-btn:hover{
+    background-color: #2980b9;
+}
+.action .action-btn.edit {
+    background-color: #f1c40f;
+}
+.action .action-btn.edit:hover {
+    background-color: #f39c12;
+}
+.action .action-btn.delete {
+    background-color: #e74c3c;
+}
+.action .action-btn.delete:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+

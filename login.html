@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Halaman Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form">
+                <span class="title">welcome back</span>
+                <p class="sub-title">Login to your application</p>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your username" required>
+                        <i class="uil uil-user-nurse icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <i class="uil uil-key-skeleton icon"></i>
+                        <i class="uil uil-eye-slash showHidePw" onclick="togglePassword()"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="sign in" class="signInBtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Password Show JS -->
+    <script type="module" src="js/passwordShow.js"></script>
+    <!-- Login JS -->
+    <script type="module" src="js/login.js"></script>
+    <!-- Jquery API -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
